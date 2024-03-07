@@ -1,8 +1,5 @@
 import { AsyncDatabase } from "promised-sqlite3";
 
-// export const db = new Database("./db/db.sqlite");
-// export const query = promisify<string, MessageRow>(db.get.bind(db));
-
 interface MessageRow {
   id: number;
   text: string;

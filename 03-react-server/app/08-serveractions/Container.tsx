@@ -9,6 +9,7 @@ import { Suspense } from "react";
 import { Spinner } from "@/app/Spinner";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
+import styles from "./Container.module.css";
 
 export default async function Container() {
   const dataFromDb = await loadCountFromDb();
@@ -23,16 +24,7 @@ export default async function Container() {
 
   console.log("rendering Container");
   return (
-    <div
-      style={{
-        border: "5px solid black",
-        padding: 30,
-        backgroundColor: "pink",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <div className={styles.wrapper}>
       <h1 style={{ margin: 0 }}>Container</h1>
       <p style={{ marginTop: 0 }}>Rendering on server</p>
       <h1>{dataFromDb}</h1>

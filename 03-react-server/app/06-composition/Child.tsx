@@ -1,7 +1,8 @@
 "use client";
 import Shared from "./Shared";
 
-export default function Child() {
+type ChildProps = { children?: React.ReactNode };
+export default function Child({ children }: ChildProps) {
   console.log("rendering Child");
   return (
     <div

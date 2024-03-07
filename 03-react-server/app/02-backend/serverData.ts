@@ -32,7 +32,7 @@ export async function queryFromDB(messageId: number) {
   console.log("Querying DB ...");
   const dbData = await getData(messageId);
 
-  const delay = (Math.floor(Math.random() * 3) + 2) * 1000;
+  const delay = (Math.floor(Math.random() * 2) + 2) * 1000;
   await new Promise((resolve) => setTimeout(resolve, delay));
   console.log("DB Data: ", dbData);
   return dbData;

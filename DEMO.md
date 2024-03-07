@@ -104,9 +104,15 @@ Solution: `"use client";`
 - Server Component as `children`
 
   ```tsx
-  export default function Child({ children }: { children: React.ReactNode }) {
+  type ChildProps = { children?: React.ReactNode };
+  export default function Child({ children }: ChildProps) {
   ```
-
+  
+  ```tsx
+        <Shared />
+        {children}
+  ```
+  
   ```tsx
   <Child>
     <Shared />

@@ -30,7 +30,7 @@ export default async function Container() {
       <h1>{dataFromDb}</h1>
       <form action={updateCount}>
         {/*<input*/}
-        {/*  style={{ height: "2em", width: 50, margin: 10 }}*/}
+        {/*  className={styles.input}*/}
         {/*  name={"val"}*/}
         {/*  defaultValue={dataFromDb + 1}*/}
         {/*/>*/}

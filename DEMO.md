@@ -174,8 +174,6 @@ async function updateCount() {
 
 - Discuss closure serialization
   - We can use the closure from the server component in the server function!
-  - Show hidden field in form field
-
 - show behavior with and without `revalidatePath("/");` -> mutation and ui update in the same request!
 - could also do a `redirect("/")` -> mutation and ui update in the same request!
 
